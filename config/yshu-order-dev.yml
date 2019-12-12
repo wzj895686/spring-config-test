@@ -27,3 +27,5 @@ feign:
     enabled: true
   httpclient:
     enabled: true
+test:
+  value: qiirjjfdf
