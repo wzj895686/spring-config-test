@@ -27,8 +27,4 @@ feign:
     enabled: true
   httpclient:
     enabled: true
-eureka:
-  client:
-    registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://localhost:9900/eureka/
+
