@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: yshu-order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.101.214.41:3306/springboot_test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
@@ -29,3 +31,10 @@ feign:
     enabled: true
 test:
   value: qiirjjfdf
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:9900/eureka/
+server:
+  port: 9920
