@@ -25,10 +25,22 @@ ribbon:
     ReadTimeout: 1400000
     ConnectTimeout: 300000
 feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
   hystrix:
     enabled: true
-  httpclient:
-    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 60000
 test:
   value: qiirjjfdf
 eureka:
