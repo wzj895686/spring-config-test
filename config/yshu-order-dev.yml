@@ -3,9 +3,9 @@ spring:
     name: yshu-order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: {cipher}a83cea337fa8d655fe1b1350595e3faa83116e468772b5e40829adff744418187edd57ac2d378a0a1d1019429d0f1d28aa30a60483997070296518bab11bf403441b3b2f290c2a1122a51bed955527c6fdd1d00a1c4e82488998a3cc2c3fd992643928e30b67d2dae720fc2478295e6c0fe55000b52468adf307b9cb84ba9e7147fa78135a25771b49d80242193643b5
+    url: jdbc:mysql://47.101.214.41:3306/springboot_test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
     username: devuser
-    password: devNEQvE
+    password: {cipher}6a06c4b392f78383644be3c74357963b4806e4c04cf9d6c0792ab55f819e5f42
   redis:
     host: 47.101.214.41
     password: redis@ys
